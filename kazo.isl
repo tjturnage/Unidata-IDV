@@ -1,21 +1,23 @@
 <!--
 Requires a saved xidv file with data path already saved
-The script below replaces the data path and writes images to a defined image directory 
+The script below replaces the data path and writes images
+to a defined image directory.
+_______________________________________________
 -->
 
 <isl debug="true" offscreen="true">
-
-<property name="baseDirectory" value="C:/data/events/19800513"/>
+<property name="baseDirectory" value="C:/datavents/19800513"/>
 <property name="scriptDirectory" value="${baseDirectory}/idv"/>
 <property name="inputFileDirectory" value="${baseDirectory}/downloads/d33"/>
-
 <property name="imageDirectory" value="${baseDirectory}/images"/>
 
-
 <!--
+_______________________________________________
 Here is where the xidv bundle files are listed
 Multipe xidv bundles can be separated by commas
+_______________________________________________
 -->
+
 <fileset dir="${inputFileDirectory}" pattern="d03">
 <foreach bund="3km-ir">
     <bundle file="${scriptDirectory}/${bund}.xidv">
@@ -25,8 +27,6 @@ Multipe xidv bundles can be separated by commas
     <image file="${imageDirectory}/${bund}_${filetail}.png"/>
 </foreach>
 </fileset>	
-
-
 
 
 <!--
