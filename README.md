@@ -15,6 +15,6 @@ runIDV C:/data/events/19800513/idv/radar.isl
 ```
 The '.isl' refers to IDV Scripting Language, which is described [here](https://www.unidata.ucar.edu/software/idv/docs/userguide/isl/index.html).
 
-I use these to call [IDV bundles (.xidv)](https://www.unidata.ucar.edu/software/idv/docs/userguide/Bundles.html) to create plots for a series of files. Make sure you have all the boxes checked (and have just one data source) when saving those files as shown below
+I use these to call [IDV bundles (.xidv)](https://www.unidata.ucar.edu/software/idv/docs/userguide/Bundles.html) to create plots for a series of files. Make sure you have the top three boxes checked on the right of the IDV dialog (as shown below) and have just one data source loaded.
 
 ![alt text](https://www.unidata.ucar.edu/software/idv/docs/userguide/images/FileDialog.gif "IDV Dialog")
